@@ -13,9 +13,11 @@ class App < Sinatra::Base
     "#{@square}"
   end
   
-  get ''
-    
-    
+  get '/say/:number/:phrase' do
+    @phrase = params[:number] * params[:num]
+    "#{@phrase}"
   end
+  
+  get 
 
 end
